@@ -32,11 +32,10 @@ import com.mapsindoors.mapssdk.OnLocationsReadyListener;
 import com.mapsindoors.mapssdk.PositionProvider;
 import com.mapsindoors.mapssdk.dbglog;
 import com.mapsindoors.mapssdk.errors.MIError;
-import com.mapsindoors.mapssdk.models.BuildingCollection;
-import com.mapsindoors.mapssdk.models.MPLocation;
-import com.mapsindoors.mapssdk.models.Point;
-import com.mapsindoors.mapssdk.models.Venue;
-import com.mapsindoors.mapssdk.models.VenueCollection;
+import com.mapsindoors.mapssdk.BuildingCollection;
+import com.mapsindoors.mapssdk.Point;
+import com.mapsindoors.mapssdk.Venue;
+import com.mapsindoors.mapssdk.VenueCollection;
 import com.mapsindoors.stdapp.BuildConfig;
 import com.mapsindoors.stdapp.R;
 import com.mapsindoors.stdapp.apis.googleplaces.GooglePlacesClient;
@@ -256,7 +255,7 @@ public class SearchFragment extends BaseFragment
 
         PositionProvider positionProvider = mActivity.getCurrentPositionProvider();
 
-        positionProvider.addOnstateChangedListener( isEnabled -> {
+        positionProvider.addOnStateChangedListener( isEnabled -> {
             if( mIsMenuCleared )
             {
                 if( BuildConfig.DEBUG )
@@ -1088,7 +1087,7 @@ public class SearchFragment extends BaseFragment
                         if( geoCodeResult != null )
                         {
                             //
-                            placesLocation = new MPLocation(
+                            placesLocation = new Location(
                                     new Point(geoCodeResult.geometry.location.lat, geoCodeResult.geometry.location.lng),
                                     mAutoCField.mainText
                             );

@@ -23,8 +23,9 @@ public class PositionProviderAggregator
 	{
 		mPositionProviders = new ArrayList<>();
 
-		mPositionProviders.add( new GoogleAPIPositionProvider( context ) );
+//		mPositionProviders.add( new GoogleAPIPositionProvider( context ) );
 
+		mPositionProviders.add( new IndoorsPositionProvider( context ) );
 	}
 
 	@NonNull

@@ -55,6 +55,10 @@
 		android:screenOrientation="portrait"
 		>
 
+		<uses-library
+			android:name="org.apache.http.legacy"
+			android:required="false" />
+
 		<meta-data
 			android:name="android.max_aspect"
 			android:value="2.1"/>

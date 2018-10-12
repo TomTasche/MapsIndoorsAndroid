@@ -80,11 +80,11 @@ public class GoogleAPIPositionProviderV2 implements PositionProvider
 	}
 
 	@Override
-	public void addOnstateChangedListener(OnStateChangedListener onStateChangedListener) {
+	public void addOnStateChangedListener(OnStateChangedListener onStateChangedListener) {
 	}
 
 	@Override
-	public void removeOnstateChangedListener(OnStateChangedListener onStateChangedListener) {
+	public void removeOnStateChangedListener(OnStateChangedListener onStateChangedListener) {
 	}
 
 	@Override

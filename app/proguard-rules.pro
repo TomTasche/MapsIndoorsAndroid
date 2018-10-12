@@ -30,7 +30,7 @@
 #
 -keep interface com.mapsindoors.mapssdk.** { *; }
 -keep class com.mapsindoors.mapssdk.errors.** { *; }
--keepclassmembers class com.mapsindoors.mapssdk.models.** { <fields>; }
+-keepclassmembers class com.mapsindoors.mapssdk.** { <fields>; }
 -keep class com.mapsindoors.mapssdk.dbglog
 # ===================== MapsIndoors SDK ======= <END>
 

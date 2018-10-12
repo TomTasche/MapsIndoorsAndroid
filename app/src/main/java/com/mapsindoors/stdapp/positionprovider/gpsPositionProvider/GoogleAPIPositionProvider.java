@@ -25,7 +25,7 @@ import com.mapsindoors.mapssdk.PermissionsAndPSListener;
 import com.mapsindoors.mapssdk.PositionProvider;
 import com.mapsindoors.mapssdk.PositionResult;
 import com.mapsindoors.mapssdk.dbglog;
-import com.mapsindoors.mapssdk.models.Point;
+import com.mapsindoors.mapssdk.Point;
 import com.mapsindoors.stdapp.BuildConfig;
 import com.mapsindoors.stdapp.broadcastReceivers.GPSStateChangeReceiver;
 import com.mapsindoors.stdapp.positionprovider.helpers.PSUtils;
@@ -256,12 +256,12 @@ public class GoogleAPIPositionProvider extends Activity
     }
 
     @Override
-    public void addOnstateChangedListener(OnStateChangedListener onStateChangedListener) {
+    public void addOnStateChangedListener(OnStateChangedListener onStateChangedListener) {
         mStateChangedlistenersList.add(onStateChangedListener);
     }
 
     @Override
-    public void removeOnstateChangedListener(OnStateChangedListener onStateChangedListener) {
+    public void removeOnStateChangedListener(OnStateChangedListener onStateChangedListener) {
         mStateChangedlistenersList.remove(onStateChangedListener);
     }
 
